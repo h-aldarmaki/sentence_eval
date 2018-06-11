@@ -7,14 +7,6 @@ P=P';
 
 X = load(data_file);
 X = spconvert(X);
-%X(X>0)=1;
-%X(X>1.38)=1; %idf threshold - testing TODO
-%X(X>0.27 & X<=1.38)=0.8;
-%X(X>0.13 & X<=1.27)=0.6;
-%X(X>0.02 & X<=0.13)=0.4;
-%X(X>0.01 & X<=0.02)=0.2;
-%X(X>0.001 & X<=0.01)=0.01;
-
 
 if size(X, 1) < n_words
  X(n_words,1) = 0;
