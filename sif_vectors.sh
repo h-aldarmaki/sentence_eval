@@ -5,7 +5,7 @@ mkdir avg/scratch
 perl avg/tokenize.pl $1 avg/scratch/data.tok
 perl avg/clean.pl avg/scratch/data.tok avg/scratch/data.clean
 
-model_dir=models/si_skipgram_small
+model_dir=../models/si_skipgram_small
 perl avg/index.pl 0 avg/scratch/data.clean avg/scratch/data.ind $model_dir/vocab 
 
 perl avg/matlab_format_sif.pl  avg/scratch/data.ind $model_dir/sif
