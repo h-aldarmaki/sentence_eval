@@ -18,7 +18,7 @@ from sklearn.naive_bayes import GaussianNB, BernoulliNB
 from sklearn.neural_network import MLPClassifier
 from sklearn.decomposition import TruncatedSVD
 
-sif=1
+sif=0 # enable removal of first principal component
 npc=1
 def compute_pc(X):
     svd = TruncatedSVD(n_components=npc, n_iter=7, random_state=0)
