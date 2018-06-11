@@ -2,13 +2,13 @@
 Evaluation scripts and data as described in "Evaluation of Unsupervised Compositional Representations". COLING 2018. 
 
 
-# Requirements #
+## Requirements ##
 
 Python 3.4 
 
 Matlab if you want to use the avg scripts. 
 
-# Instructions #
+## Instructions ##
 
 * unzip the data files:
 ```
