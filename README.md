@@ -26,7 +26,10 @@ gunzip models/si_skipgram_small/siskip_300.vec.gz
 
 ```
 cd scripts
+mkdir log
 python eval_all_fast.py
 ```
+
+Note that grid search and CV are disabled for faster evaluation. We did not observe notable differences in the results either way. You can adjust `eval_all_fast.py` to enable CV and grid search where applicable (see the functions in `evaluation.py`).
 
 * The output will be saved in scripts/log/eval.log
