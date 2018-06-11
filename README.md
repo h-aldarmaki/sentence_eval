@@ -16,7 +16,7 @@ tar -xzvf data.tar.gz
 gunzip models/si_skipgram_small/siskip_300.vec.gz 
 ```
 
-* Create vector representations for all datasets. You can create a script that takes two arguments (input, output) and update `cmd` in `process_files.sh`. An example script for creating vectors using weighted average of word embeddings is given in `sif_vectors.sh`. You will need Matlab to run that. 
+* Create vector representations for all datasets and store them in the approperiate `\vec` folders. You can create a script that takes two arguments (input, output) and update `cmd` in `process_files.sh` to do this automatically. An example script for creating vectors using weighted average of word embeddings is given in `sif_vectors.sh`. You will need Matlab to run it:
 
 ```
 ./process_files.sh
