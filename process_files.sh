@@ -6,7 +6,7 @@ cmd=./sif_vectors.sh
 rm */vec/*
 dir="$(pwd)"
 
-for file in $dir/*/txt/*.txt; do
+for file in $dir/*/txt/*.tok; do
  parentdir="$(dirname $file)"
  subdir="$(dirname $parentdir)"
  tmp=${file##*/}
