@@ -2,7 +2,8 @@
 
 cd scripts
 mkdir avg/scratch
-perl avg/tokenize.pl $1 avg/scratch/data.tok
+sed '/^\s*$/d' $1 avg/scratch/data.txt
+perl avg/tokenize.pl avg/scratch/data.txt avg/scratch/data.tok
 perl avg/clean.pl avg/scratch/data.tok avg/scratch/data.clean
 
 model_dir=../models/si_skipgram_small
