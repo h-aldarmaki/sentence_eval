@@ -2,7 +2,7 @@
 
 cd scripts
 mkdir avg/scratch
-sed '/^\s*$/d' $1 avg/scratch/data.txt
+sed '/^\s*$/d' $1 > avg/scratch/data.txt
 perl avg/tokenize.pl avg/scratch/data.txt avg/scratch/data.tok
 perl avg/clean.pl avg/scratch/data.tok avg/scratch/data.clean
 
